@@ -1,0 +1,380 @@
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    /* Clean and modern font */
+    font-size: 16px;
+    background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+    /* Light blue gradient background */
+    color: #212121;
+    /* Neutral text color for readability */
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+.container {
+    max-width: 1200px;
+    /* Keep content centered and readable */
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    /* White background for main content */
+    border-radius: 15px;
+    /* Soft rounded edges */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    animation: fadeIn 1s ease-in-out;
+    /* Smooth fade-in effect */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #1e3c72;
+    /* Deep blue for headings */
+    text-transform: capitalize;
+    /* Make text elegant */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #4a4a4a;
+    /* Slightly lighter text for contrast */
+}
+
+a {
+    color: #007bff;
+    /* Blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    /* Smooth transition for hover */
+}
+
+a:hover {
+    color: #0056b3;
+    /* Darker blue on hover */
+    text-decoration: underline;
+    /* Emphasize hover */
+}
+
+/* Animation for container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style for buttons */
+button,
+.btn {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    /* Gradient for buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    /* Slight shadow for depth */
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    background: linear-gradient(to right, #2a5298, #1e3c72);
+    /* Reverse gradient on hover */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+}
+
+/* Styling the navigation bar */
+nav.navbar {
+    background: linear-gradient(to right, #2196f3, #1e88e5);
+    /* Bright gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: #ffffff !important;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #bbdefb !important;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+    background: #f5f5f5;
+    /* Neutral light gray background */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1e3c72;
+}
+
+.section p {
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+.container {
+    margin-top: 5rem;
+    /* Consistent spacing */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(241, 241, 241, 0.8));
+    /* Transparent gradient matching body */
+    border-radius: 15px;
+    /* Smooth rounded corners */
+    padding: 30px;
+    /* Comfortable inner spacing */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover animations */
+    max-width: 85%;
+    /* Restrict width to enhance focus */
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the container */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Subtle border for structure */
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover */
+}
+
+.table {
+    margin-top: 1%;
+    margin-left: 8%;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+/* Navbar styling */
+.navbar {
+    margin-bottom: 30px;
+}
+
+
+/* Form styling */
+.form-inline {
+
+    margin-left: 10%;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    max-width: 80%;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody+tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+/* Button customization */
+.btn {
+    font-size: 14px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.form-check-input {
+    appearance: none;
+    width: 1.5em;
+    height: 1.5em;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+}
+
+.form-check-label {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Style for the search form */
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin-left: 1%;
+    /* Search button Alignment*/
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 5%;
+    padding: 10px;
+    background-color: #1e3c72;
+    /* Deep blue background */
+    color: #f8f9fa;
+    /* Light text color for contrast */
+    font-size: 14px;
+    /* Adjust the text size */
+    font-family: 'Arial', sans-serif;
+    /* Clean and modern font */
+    border-top: 2px solid #007bff;
+    /* Add a border to separate footer */
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for a floating effect */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+
+.success-message {
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.success-message p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.success-message .close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.success-message .close:hover {
+    color: #ccc;
+}
+
+/* Smooth fade-in animation for the popup */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
